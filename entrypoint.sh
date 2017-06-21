@@ -6,7 +6,8 @@ then
 	rm /tmp/nodebb -rf
 
 	npm install --production && npm cache clean --force
-	/usr/src/app/nodebb setup $@
 fi
 
-/usr/src/app/nodebb start $@
+./nodebb setup $@
+
+node loader.js –no-daemon –no-silent Restart=always
