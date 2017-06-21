@@ -6,7 +6,7 @@ then
 	rm /tmp/nodebb -rf
 
 	npm install --production && npm cache clean --force
-	./nodebb setup $@
+	/usr/src/app/nodebb setup $@
 fi
 
-./nodebb start $@
+/usr/src/app/nodebb start $@
