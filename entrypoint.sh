@@ -6,8 +6,9 @@ then
 	rm /tmp/nodebb -rf
 
 	npm install --production && npm cache clean --force
+	./nodebb setup $@
+else
+	./nodebb upgrade $@
 fi
-
-./nodebb setup $@
 
 node loader.js --silent false --daemon false
