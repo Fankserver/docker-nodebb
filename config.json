@@ -1,0 +1,11 @@
+{
+    "url": "",
+    "secret": "",
+    "database": "mongo",
+    "port": 4567,
+    "mongo": {
+        "host": "mongo",
+        "port": 27017,
+        "database": "nodebb"
+    }
+}
