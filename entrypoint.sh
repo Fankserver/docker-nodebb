@@ -10,4 +10,4 @@ fi
 
 ./nodebb setup $@
 
-node loader.js –no-daemon –no-silent Restart=always
+node loader.js --silent false --daemon false
