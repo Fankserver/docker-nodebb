@@ -8,3 +8,5 @@ then
 	npm install --production && npm cache clean --force
 	./nodebb setup $@
 fi
+
+./nodebb start $@

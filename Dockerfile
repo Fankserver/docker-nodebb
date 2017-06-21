@@ -11,4 +11,4 @@ WORKDIR /usr/src/app
 VOLUME ["/usr/src/app", "/uploads"]
 
 USER node
-CMD ["/entrypoint.sh"]
+ENTRYPOINT ["/entrypoint.sh"]
