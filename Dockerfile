@@ -2,7 +2,7 @@ FROM node:6-alpine
 
 COPY entrypoint.sh /entrypoint.sh
 
-RUN apk add --no-cache ssmtp
+RUN apk add --no-cache ssmtp bash git
 
 RUN mkdir -p /usr/src/app && \
 	chown -R node:node /usr/src/app
