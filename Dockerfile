@@ -1,6 +1,8 @@
-FROM node:6
+FROM node:6-alpine
 
 COPY entrypoint.sh /entrypoint.sh
+
+RUN apk add --no-cache ssmtp
 
 RUN mkdir -p /usr/src/app && \
 	chown -R node:node /usr/src/app
